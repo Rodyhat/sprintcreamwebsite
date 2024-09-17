@@ -14,6 +14,10 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- icon link -->
     <script src="https://kit.fontawesome.com/5440431d94.js" crossorigin="anonymous"></script>
 
@@ -142,23 +146,12 @@
                         <div class="container ps-5">
 
                             <div class="row bestseller-gap">
-                                <div class="col-lg-3 col-md-3 col-4 product1 product d-flex
-                                flex-column justify-content-end gap-5 cleanser">
-                                    <div class="pop-icon d-flex flex-column w-25 align-items-center gap-4 pop-left"
-                                        id="pop-icon">
-                                        <div
-                                            class="icon-pop cart-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-bag-shopping text-light fs-5"></i>
-                                        </div>
-                                        <div
-                                            class=" icon-pop star-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-star text-light fs-5"></i>
-                                        </div>
-                                        <div
-                                            class="icon-pop share-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-share text-light fs-5"></i>
-                                        </div>
-                                    </div>
+                                <div class="col-lg-3 col-md-3 col-4 product1 product d-flex flex-column justify-content-end gap-5 cleanser">
+                                    <!-- <div class="icons gap-lg-3 gap-1 ms-auto ms-lg-5 px-lg-5 border border-dark">
+                                        <i class="fa-solid fa-bag-shopping bg-success text-light p-3 rounded-5"></i>
+                                        <i class="fa-solid fa-star bg-success text-light p-lg-3 p-1 rounded-5"></i>
+                                        <i class="fa-solid fa-share bg-success text-light p-3 rounded-5"></i>
+                                    </div> -->
                                     <div
                                         class="d-flex flex-column justify-content-end align-items-center  bestseller-text">
                                         <p class="m-0 fs-5">$39.00</p>
@@ -171,13 +164,12 @@
                                             5170 Reviews</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-4 product1 product d-flex
-                            flex-column justify-content-end gap-5 shroom">
-                                    <div class="icons gap-lg-3 gap-1 ms-auto ms-lg-5 px-lg-5 ">
+                                <div class="col-lg-3 col-md-3 col-4 product1 product d-flex flex-column justify-content-end gap-5 shroom">
+                                    <!-- <div class="icons gap-lg-3 gap-1 ms-auto ms-lg-5 px-lg-5 ">
                                         <i class="fa-solid fa-bag-shopping bg-success text-light p-3 rounded-5"></i>
                                         <i class="fa-solid fa-star bg-success text-light p-lg-3 p-1 rounded-5"></i>
                                         <i class="fa-solid fa-share bg-success text-light p-3 rounded-5"></i>
-                                    </div>
+                                    </div> -->
                                     <div class="bestseller-text d-flex
                                  justify-content-end align-items-center flex-column">
                                         <p class="m-0 fs-5">$36.00</p>
@@ -190,24 +182,8 @@
                                             5170 Reviews</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-3 product1 product d-flex
-                            flex-column justify-content-end gap-5 eye-cream">
-                                    <div class="pop-icon d-none flex-column w-25 align-items-center gap-4 pop-left">
-                                        <div
-                                            class="icon-pop cart-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-bag-shopping text-light fs-5"></i>
-                                        </div>
-                                        <div
-                                            class=" icon-pop star-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-star text-light fs-5"></i>
-                                        </div>
-                                        <div
-                                            class="icon-pop share-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-share text-light fs-5"></i>
-                                        </div>
-                                    </div>
-                                    <div class="bestseller-text d-flex
-                                justify-content-end align-items-center flex-column">
+                                <div class="col-lg-3 col-md-3 col-3 product1 product d-flex flex-column justify-content-end gap-5 eye-cream">
+                                    <div class="bestseller-text d-flex justify-content-end align-items-center flex-column">
                                         <p class="m-0 fs-5">$36.00</p>
                                         <p class="m-0 fs-6">Coffe Bean Caffeine Eye Cream</p>
                                         <p class="m-0 fs-6"><i class="fa-solid fa-star text-success"></i><i
@@ -1013,7 +989,8 @@
                 <div class="row ">
                     <div class="col-lg-3 col-md-3 col-6">
                         <h4>Company</h4>
-                        <p class="m-0 footer-text">Find a location nearest to you.See <br><a href="">Our stories</a></p>
+                        <p class="m-0 footer-text">Find a location nearest to you.See <br><a href=""
+                                style="color: white; text-decoration: none;">Our stories</a></p>
                         <p class="m-0 footer-text">+391 (0)35 2568 4593</p>
                         <p class="m-0 footer-text">hello@domain.com</p>
                     </div>
@@ -1047,17 +1024,12 @@
                 </div>
             </div>
         </footer>
-
-
-
     </div>
 
-
-
-
-
-
-
+    <!-- AOS link -->
+    <script>
+        AOS.init();
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

@@ -5,27 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glowing website</title>
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon (2).ico" type="image/x-icon">
     <!-- Boostrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- AOS link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <!-- icon link -->
     <script src="https://kit.fontawesome.com/5440431d94.js" crossorigin="anonymous"></script>
-
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <div class="all">
         <section>
             <h5 class="free-order text-center pb-3">Free Shipping On All U.S. Orders $50+ </h5>
@@ -68,22 +64,31 @@
                     </div>
                 </nav>
                 <!-- hero section -->
-                <div class="row">
-                    <div class="col-12 hero-text ">
-                        <h1 class="hero-h1">Reveal The <br> Beauty Of Skin</h1>
-                        <p class="fs-5">Made using clean, non-toxic ingredients, <br>our products are designed for
-                            everyone.
-                        </p>
-                        <div class="btn">
-                            <button type="button" class="btn btn-dark text-light fs-5">Shop Now</button>
+                <main style="
+                background-image: url(./images/hero-banner-1.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+                " data-aos="fade-up" data-aos-duration="3000">
+                    <div class="row" >
+                        <div class="col-12 hero-text ">
+                            <h1 class="hero-h1">Reveal The <br> Beauty Of Skin</h1>
+                            <p class="fs-5">Made using clean, non-toxic ingredients, <br>our products are designed for
+                                everyone.
+                            </p>
+                            <div class="btn">
+                                <button type="button" class="btn btn-dark text-light fs-5">Shop Now</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </main>
+
             </div>
         </section>
 
         <!-- summer collection -->
-        <section>
+        <section data-aos="fade-up" data-aos-duration="3000">
             <div class="container mt-5">
                 <div class="row gap-3">
                     <div
@@ -127,7 +132,7 @@
         <!-- best selling -->
         <!-- Swiper -->
         <section>
-            <div class="container mt-5">
+            <div class="container mt-5" data-aos="fade-up" data-aos-duration="3000">
                 <div class="row pt-5 pb-2">
                     <div class="col-12">
                         <div class="d-flex justify-content-between">
@@ -139,14 +144,15 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper mySwiper ">
+            <div class="swiper mySwiper " data-aos="fade-up" data-aos-duration="3000">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <!-- best selling -->
                         <div class="container ps-5">
 
                             <div class="row bestseller-gap">
-                                <div class="col-lg-3 col-md-3 col-4 product1 product d-flex flex-column justify-content-end gap-5 cleanser">
+                                <div
+                                    class="col-lg-3 col-md-3 col-4 product1 product d-flex flex-column justify-content-end gap-5 cleanser">
                                     <!-- <div class="icons gap-lg-3 gap-1 ms-auto ms-lg-5 px-lg-5 border border-dark">
                                         <i class="fa-solid fa-bag-shopping bg-success text-light p-3 rounded-5"></i>
                                         <i class="fa-solid fa-star bg-success text-light p-lg-3 p-1 rounded-5"></i>
@@ -164,12 +170,8 @@
                                             5170 Reviews</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-4 product1 product d-flex flex-column justify-content-end gap-5 shroom">
-                                    <!-- <div class="icons gap-lg-3 gap-1 ms-auto ms-lg-5 px-lg-5 ">
-                                        <i class="fa-solid fa-bag-shopping bg-success text-light p-3 rounded-5"></i>
-                                        <i class="fa-solid fa-star bg-success text-light p-lg-3 p-1 rounded-5"></i>
-                                        <i class="fa-solid fa-share bg-success text-light p-3 rounded-5"></i>
-                                    </div> -->
+                                <div
+                                    class="col-lg-3 col-md-3 col-4 product1 product d-flex flex-column justify-content-end gap-5 shroom">
                                     <div class="bestseller-text d-flex
                                  justify-content-end align-items-center flex-column">
                                         <p class="m-0 fs-5">$36.00</p>
@@ -182,8 +184,10 @@
                                             5170 Reviews</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-3 product1 product d-flex flex-column justify-content-end gap-5 eye-cream">
-                                    <div class="bestseller-text d-flex justify-content-end align-items-center flex-column">
+                                <div
+                                    class="col-lg-3 col-md-3 col-3 product1 product d-flex flex-column justify-content-end gap-5 eye-cream">
+                                    <div
+                                        class="bestseller-text d-flex justify-content-end align-items-center flex-column">
                                         <p class="m-0 fs-5">$36.00</p>
                                         <p class="m-0 fs-6">Coffe Bean Caffeine Eye Cream</p>
                                         <p class="m-0 fs-6"><i class="fa-solid fa-star text-success"></i><i
@@ -486,7 +490,7 @@
         </section>
 
         <!-- under $25 -->
-        <section>
+        <section data-aos="fade-up" data-aos-duration="3000">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -508,20 +512,11 @@
                             <div class="row bestseller-gap">
                                 <div class="col-3 col-md-3 col-4  d-flex
                             flex-column justify-content-end gap-5 product2 y-cleanser">
-                                    <div class="pop-icon d-flex flex-column w-25 align-items-center gap-4 pop-left">
-                                        <div
-                                            class="icon-pop cart-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-bag-shopping text-light fs-5"></i>
-                                        </div>
-                                        <div
-                                            class=" icon-pop star-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-star text-light fs-5"></i>
-                                        </div>
-                                        <div
-                                            class="icon-pop share-icon d-flex justify-content-center align-items-center">
-                                            <i class="fa-solid fa-share text-light fs-5"></i>
-                                        </div>
-                                    </div>
+                            <div class="icons gap-lg-3 gap-1 ms-auto ms-lg-5 px-lg-5 ">
+                                <i class="fa-solid fa-bag-shopping bg-success text-light p-3 rounded-5"></i>
+                                <i class="fa-solid fa-star bg-success text-light p-lg-3 p-1 rounded-5"></i>
+                                <i class="fa-solid fa-share bg-success text-light p-3 rounded-5"></i>
+                              </div>
                                     <div class="bestseller-text2 d-flex
                     align-items-center flex-column">
                                         <p class="m-0 fs-5">$39.00</p>
@@ -880,7 +875,7 @@
         </section>
 
         <!-- new collection -->
-        <section>
+        <section data-aos="fade-up" data-aos-duration="3000">
             <div class="container mt-5">
                 <div class="row gap-4 pt-5">
                     <div class="col-lg-7 col-md-7 col-12 new-collection1">
@@ -906,12 +901,12 @@
         </section>
 
         <!-- why shopping with Glowing -->
-        <section>
+        <section data-aos="fade-up" data-aos-duration="3000">
             <div class="container mt-5">
                 <div class="row pt-5">
                     <h2 class="text-center">Why Shopping with Glowing?</h2>
                 </div>
-                <div class="row d-flex align-items-center mt-5 ">
+                <div class="row d-flex align-items-center mt-5 " data-aos="fade-up">
                     <div class="col-lg-4 col-md-4 col-6 d-flex align-items-center flex-column">
                         <img src="./images/feature-1.jpg" width="100px" alt="">
                         <h3>Guaranteed PURE</h3>
@@ -940,7 +935,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-4 d-flex ">
+                <div class="row mt-4 d-flex " data-aos="fade-up" data-aos-duration="3000">
                     <div class="col-lg-3 col-md-3 col-6 py-5">
                         <img src="./images/product-17.jpg" id="orange-oil" alt="">
                     </div>
@@ -958,7 +953,7 @@
         </section>
 
         <!-- more to discover -->
-        <section>
+        <section  data-aos="fade-up" data-aos-duration="3000">
             <div class="container py-5">
                 <div class="row">
                     <h2 class="text-center pt-5 pb-2">More to Discover</h2>
@@ -1025,17 +1020,14 @@
             </div>
         </footer>
     </div>
-
     <!-- AOS link -->
     <script>
         AOS.init();
     </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- javascript link -->
     <script src="./script.js"></script>
-
     <!-- Boostrap script link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
